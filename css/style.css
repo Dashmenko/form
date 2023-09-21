@@ -1,0 +1,178 @@
+@media (max-width: 700px) {
+  label {
+    font-size: calc(var(--index) / 1.795);
+  }
+
+  .container h1 {
+    text-align: center;
+  }
+}
+
+html,
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: raleway_f;
+  src: url(../fonts/raleway-regular.woff2);
+}
+
+@font-face {
+  font-family: raleway_f;
+  src: url(../fonts/raleway-black.woff2);
+  font-weight: 900;
+}
+
+:root {
+  --index: calc(1vw + 1vh);
+  --text: #e7e7e0;
+  --transition: transform .75s cubic-bezier(.075, .5, 0, 1);
+}
+
+.parallax,
+.parallax__layer {
+  height: 1000px;
+}
+
+.parallax__layer {
+  position: fixed;
+  background-position: bottom center;
+  background-size: auto 1038px;
+  background-repeat: repeat-x;
+  width: 100%;
+  z-index: 10;
+}
+
+#parallax-0 {
+  background-image: url(../img/layer0.png);
+  background-color: #ffaf1b;
+}
+
+#parallax-1 {
+  background-image: url(../img/layer1.png);
+}
+
+#parallax-2 {
+  background-image: url(../img/layer2.png);
+}
+
+#parallax-3 {
+  background-image: url(../img/layer3.png);
+}
+
+#parallax-4 {
+  background-image: url(../img/layer4.png);
+}
+
+#parallax-5 {
+  background-image: url(../img/layer5.png);
+}
+
+#parallax-6 {
+  background-image: url(../img/layer6.png);
+}
+
+#parallax-7 {
+  background-image: url(../img/layer7.png);
+}
+
+#parallax-8 {
+  background-image: url(../img/layer8.png);
+}
+
+.maincontent {
+  position: relative;
+  width: 100%;
+  min-height: 150vh;
+  z-index: 99;
+  background-color: #210002;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.registration_text {
+  color: #f0b850;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	margin-bottom: calc(var(--index) / .95);
+	margin-top: calc(var(--index) / .375);
+}
+
+.registration_text h1,
+.registration_text p {
+  text-shadow: #f9d548 1px 0 4px;
+}
+
+h1 {
+  font-size: calc(var(--index) * 2.65);
+  letter-spacing: calc(var(--index) / 2.25);
+  font-family: raleway_f, sans-serif;
+  line-height: 1.55;
+}
+
+p {
+  font-family: raleway_f, sans-serif;
+  font-size: calc(var(--index) / 1.175);
+	letter-spacing: calc(var(--index) / 3.5);
+	margin-top: calc(var(--index) * -1.5);
+}
+
+abbr {
+  color: red;
+}
+
+.registration {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reg_info { 
+  color: #cfbd9a;
+  font-family: raleway_f, sans-serif;
+  font-size: calc(var(--index) / 1.295);
+	letter-spacing: calc(var(--index) / 4.5);
+	margin-top: calc(var(--index) / 2);
+}
+
+.registration input {
+  background-color: rgb(243, 236, 225);
+  font-family: raleway_f, sans-serif;
+  font-size: calc(var(--index) * 1.1);
+	margin-top: calc(var(--index) / 3);
+  margin-bottom: calc(var(--index) / 1.5);
+  width: calc(var(--index) * 20);
+  height: calc(var(--index) * 1.5);
+}
+
+
+.registration_btn input {
+  cursor: pointer;
+	margin-top: calc(var(--index) / .95);
+
+  font-family: raleway_f, sans-serif;
+  width: calc(var(--index) * 28);
+  height: calc(var(--index) * 2);
+  font-size: calc(var(--index) * 1.1);
+  background-color: #ac7070;
+  color: #ffffff;
+  border: none;
+}
+
+.registration_btn:hover input {
+  background-color: #825656;
+  color: #cbcbcb;
+  border: none;
+}
